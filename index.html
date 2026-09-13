@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Gift For You</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+  <main id="book" aria-label="Website hadiah">
+    <section class="scene active" data-page="1">
+      <img src="page1.png" alt="">
+      <button class="hotspot envelope" data-go="2" aria-label="Buka hadiah"></button>
+    </section>
+
+    <section class="scene" data-page="2">
+      <img src="page2.png" alt="">
+      <button class="hotspot message" data-go="3" aria-label="Message"></button>
+      <button class="hotspot memories" data-go="4" aria-label="Memories"></button>
+      <button class="hotspot flowers" data-go="6" aria-label="Flowers"></button>
+    </section>
+
+    <section class="scene" data-page="3">
+      <img src="page3.png" alt="">
+      <button class="hotspot next next3" data-go="4" aria-label="Next"></button>
+    </section>
+
+    <section class="scene" data-page="4">
+      <img src="page4.png" alt="">
+      <button class="hotspot next next4" data-go="5" aria-label="Next"></button>
+    </section>
+
+    <section class="scene" data-page="5">
+      <img src="page5.png" alt="">
+      <button class="hotspot next next5" data-go="6" aria-label="Next"></button>
+    </section>
+
+    <section class="scene" data-page="6">
+      <img src="page6.png" alt="">
+      <button class="hotspot next next6" data-go="7" aria-label="Next"></button>
+    </section>
+
+    <section class="scene" data-page="7">
+      <img src="page7.png" alt="">
+      <button class="hotspot back-home" data-go="2" aria-label="Back"></button>
+    </section>
+
+    <button id="musicButton" class="music" type="button">♫ MUSIC</button>
+    <audio id="bgMusic" src="music.mp3" loop preload="auto"></audio>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
